@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=320">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/nullstayle.css">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="corpus">
+			<div class="name">
+				<span class="name__text">Измеритель СРЧ</span>
+			</div>
+			<div class="top-component">
+				<div class="top-component__stop" act="active">Stop</div>
+				<div class="top-component__panel">
+					<div class="top-component__panel-setings">
+						<div class="arrows">
+							<div class="arrows__top"></div>
+							<div class="arrows__bottom"></div>
+						</div>
+						<!--<div class="namber" contenteditable="true">10</div>-->
+						    <div class="namber">50</div>
+					</div>
+					<div class="info">
+						<div class="info__text">Количество  сессий</div>
+						<div class="info__button">Info</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-component">
+				<div class="bottom-component__start">Start</div>
+				<div class="bottom-component__parser">
+					<div class="bottom-component__parser-text">Среднея скорость реакции</div>
+					<div class="bottom-component__parser-number">0</div>
+				</div>
+			</div>
+			<div class="display margin" act="active">
+				<div class="display__qub1 display-none"></div> <!--игровой квадрат-->
+
+
+				<div class="display__statistic display-none"> <!--Статитстика-->
+					  <div class="dinamic-stata"></div>
+					    <div class="conteiner-myChart">
+                           <canvas id="myChart"></canvas>
+                        </div>
+					<ul>
+					  <ol class="list">
+						<!--<li type="1" value="1"><span> С.Р. -</span> 1.2323;<span> В.О. - </span>2.344</li>
+						<li type="1" ><span> С.Р. -</span> 1.2323;<span> В.О. - </span>2.344</li>
+						<li type="1" ><span> С.Р. -</span> 1.2323;<span> В.О. - </span>2.344</li>-->
+					  </ol>
+					</ul> 
+				</div>
+
+
+
+				<div class="display-instuction"> <!--Инструкция-->
+					<div class="display__text-hedliner">Измеритель скорости реакции человека (ИСРЧ).<span class="red">Инструкция!</span></div>
+					<div class="display__text-start">Start - Запустить эксперемент.</div>
+					<div class="display__text-stop">Stop - Остановить эксперемент.</div>
+					<div class="display__arrows-item">
+						<div class="display__arrows-item-img"></div>
+						<span class="display__arrows-item-text">- Настроить количество сессий.</span>
+					</div>
+					<span class="display__info-test">Info - Получить информацию о всех измирениях эксперемента.</span>
+
+					<div class="Options">Опции</div>	
+
+					<div class="VO">
+						<div class="VO__namber" contenteditable="true">5000</div><span>м.с.</span>
+						<div class="VO__text">Настроить время ожидания</div>
+					</div>
+					<div class="VO">
+						<div class="VO_button">Применить</div>
+					</div>
+						
+				</div>
+
+
+				<div class="block-timer display-none"> <!--Таймер-->
+					<div class="block-timer__numer"></div>
+				</div>
+
+				<div class="masseg display-none">
+					Количество сесcий не может равнятся нулю!!!
+				</div>
+
+				<div class="masseg-done display-none"></div>
+				
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+
+</body>
+</html>
